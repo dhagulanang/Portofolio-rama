@@ -1,0 +1,163 @@
+/* Gaya Umum */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tombol-kembali, .tombol-lainnya {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tombol-kembali:hover, .tombol-lainnya:hover {
+    background-color: #f0f0f0;
+}
+
+.judul-halaman {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Gaya Halaman Utama */
+.bagian-sambutan {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.bagian-sambutan h1 {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 1rem;
+}
+
+.bagian-sambutan p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.tombol-aksi {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.tombol:hover {
+    background-color: #3a7bc8;
+}
+
+/* Gaya Halaman Tentang */
+.bagian-tentang {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.bagian-tentang h1 {
+    color: #4a90e2;
+    margin-bottom: 1.5rem;
+}
+
+.bagian-tentang p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Gaya Halaman Portfolio */
+.bagian-portfolio {
+    padding: 2rem 0;
+}
+
+.bagian-portfolio h1 {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 2rem;
+}
+
+.galeri-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.item-portfolio {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.item-portfolio img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.lihat-selengkapnya {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    color: #4a90e2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Gaya Responsif */
+@media (max-width: 768px) {
+    .bagian-sambutan h1 {
+        font-size: 2rem;
+    }
+    
+    .tombol-aksi {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .galeri-portfolio {
+        grid-template-columns: 1fr;
+    }
+}
